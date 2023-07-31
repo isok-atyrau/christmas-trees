@@ -1,0 +1,78 @@
+.features {
+   background-color: var(--second-bg-color);
+   padding: 40px 0;
+   color: var(--main-color);
+}
+
+.features__list {
+   display: flex;
+   justify-content: space-between;
+   gap: 30px;
+}
+.features__item {
+   padding-top: 115px;
+   flex-basis: 236px;
+   text-align: center;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 130%;
+   letter-spacing: 0.04em;
+   background-size: 100px;
+   background-position: center top;
+   background-repeat: no-repeat;
+}
+.features__item_one {
+   background-image: url("../image/decor/tree.svg");
+}
+.features__item_two {
+   background-image: url("../image/decor/christmas-decorations.svg");
+}
+.features__item_three {
+   background-image: url("../image/decor/flowers.svg");
+}
+.features__item_four {
+   background-image: url("../image/decor/delivery-truck.svg");
+}
+
+@media (max-width: 1200px) {
+   .features__item {
+      padding-top: 90px;
+      flex-basis: 190px;
+      font-size: 16px;
+      background-size: 80px;
+   }
+}
+
+@media (max-width: 1000px) {
+   .features__list {
+      gap: 15px;
+   }
+   .features__item {
+      padding-top: 70px;
+      flex-basis: 162px;
+      font-size: 14px;
+      background-size: 60px;
+   }
+}
+
+@media (max-width: 760px) {
+   .features__list {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px 50px;
+   }
+   .features__item {
+      flex-basis: 200px;
+   }
+}
+@media (max-width: 5800px) {
+   .features__list {
+      gap: 20px 24px;
+   }
+   .features__item {
+      padding-top: 55px;
+      background-size: 50px;
+      flex-basis: 46%;
+      font-size: 12px;
+   }
+}

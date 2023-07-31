@@ -1,0 +1,150 @@
+.hero {
+   background-color: var(--main-bg-color);
+   color: var(--main-color);
+}
+
+.hero__container {
+   display: flex;
+   align-items: center;
+}
+.hero__left {
+   margin-left: -150px;
+   margin-right: 110px;
+   line-height: 0;
+}
+
+.hero__right {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   max-width: 630px;
+}
+.hero__title {
+   margin: 0 0 50px;
+}
+
+.hero__desc {
+   margin: 0 0 24px;
+   font-size: 26px;
+   line-height: 140%;
+   letter-spacing: 1.04px;
+}
+
+.hero__down {
+   max-width: 113px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 130%;
+   letter-spacing: 0.04em;
+}
+
+.hero__down-img {
+   margin-bottom: 13px;
+   filter: drop-shadow(4px 7px 20px transparent);
+   transition: filter 0.3s ease-in;
+}
+
+.hero__down:hover .hero__down-img {
+   filter: drop-shadow(4px 7px 20px var(--second-color));
+}
+
+@media (max-width: 1440px) {
+   .hero__img {
+      width: 41vw;
+   }
+   .hero__left {
+      margin-left: -70px;
+      margin-right: 55px;
+   }
+   .hero__right {
+      max-width: 550px;
+   }
+   .hero__title {
+      font-size: 60px;
+   }
+   .hero__desc {
+      font-size: 22px;
+   }
+}
+
+@media (max-width: 1200px) {
+   .hero__left {
+      margin-left: -42px;
+   }
+   .hero__title {
+      margin-bottom: 25px;
+      font-size: 50px;
+   }
+   .hero__desc {
+      margin-bottom: 20px;
+      font-size: 20px;
+   }
+   .hero__down {
+      max-width: 75px;
+      font-size: 16px;
+   }
+
+   .hero__down-img {
+      margin-bottom: 9px;
+      max-width: 65px;
+   }
+}
+
+@media (max-width: 1000px) {
+   .hero__left {
+      margin-left: -39px;
+      margin-right: 50px;
+   }
+   .hero__right {
+      max-width: 360px;
+   }
+   .hero__title {
+      margin-bottom: 20px;
+      font-size: 40px;
+   }
+   .hero__desc {
+      font-size: 16px;
+   }
+   .hero__down {
+      max-width: 66px;
+      font-size: 14px;
+   }
+
+   .hero__down-img {
+      margin-bottom: 7px;
+      max-width: 42px;
+   }
+}
+
+@media (max-width: 760px) {
+   .hero__container {
+      flex-direction: column;
+   }
+   .hero__left {
+      margin: 0;
+   }
+   .hero__img {
+      width: 100%;
+   }
+}
+@media (max-width: 580px) {
+   .hero__left {
+      margin: 0 -10px;
+   }
+   .hero__title {
+      margin-bottom: 16px;
+      font-size: 28px;
+   }
+   .hero__desc {
+      font-size: 14px;
+      margin-bottom: 16px;
+   }
+   .hero__down {
+      max-width: 57px;
+      font-size: 12px;
+   }
+}

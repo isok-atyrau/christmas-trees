@@ -1,0 +1,142 @@
+.modal {
+   position: relative;
+   width: 100%;
+   background-color: var(--main-color);
+   max-width: 950px;
+   padding: 65px 85px;
+   border-radius: 14px;
+   border: 1px solid var(--second-color);
+}
+.modal__close {
+   position: absolute;
+   right: 20px;
+   top: 20px;
+   background-color: transparent;
+   color: var(--main-bg-color);
+   cursor: pointer;
+   transition: color 0.3s ease-in;
+}
+
+.modal__close:hover {
+   color: var(--second-color);
+}
+.modal__close:active {
+   color: var(--second-bg-color);
+}
+.modal__close:focus {
+   color: var(--second-color);
+   outline: 1px solid var(--second-color);
+}
+.modal__title {
+   margin: 0 0 50px;
+   text-align: center;
+   font-size: 26px;
+   font-weight: 700;
+   line-height: 140%;
+   letter-spacing: 0.04em;
+   color: var(--main-bg-color);
+}
+.modal__form {
+   display: flex;
+   flex-direction: column;
+}
+.modal__label {
+   display: block;
+   position: relative;
+}
+.modal__label-text {
+   position: absolute;
+   top: 12px;
+   left: 15px;
+   color: var(--second-color);
+   font-size: 18px;
+   font-weight: 700;
+}
+.modal__input {
+   margin-bottom: 20px;
+   padding: 45px 15px 31px;
+   width: 100%;
+   font-size: 18px;
+   font-weight: 400;
+   letter-spacing: 0.04em;
+
+   border-radius: 12px;
+   border: 1px solid var(--second-bg-color);
+}
+
+.modal__input::placeholder {
+   opacity: 0.7;
+}
+
+.modal__button {
+   align-self: flex-end;
+   padding: 14px 36px;
+   margin-top: 40px;
+   border-radius: 10px;
+   background: var(--trigger-color);
+   font-size: 18px;
+   letter-spacing: 0.04em;
+   color: var(--main-color);
+}
+
+@media (max-width: 1200px) {
+   .modal {
+      max-width: 746px;
+      padding: 50px 100px;
+   }
+   .modal__title {
+      margin-bottom: 40px;
+      font-size: 22px;
+   }
+   .modal__button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 8px;
+   }
+}
+@media (max-width: 1000px) {
+   .modal {
+      max-width: 600px;
+      padding: 40px 40px 80px;
+   }
+   .modal__title {
+      margin-bottom: 25px;
+      font-size: 20px;
+   }
+   .modal__label-text {
+      font-size: 14px;
+   }
+   .modal__input {
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+      font-size: 14px;
+   }
+   .modal__button {
+      margin-top: 15px;
+      padding: 8px 20px;
+      font-size: 14px;
+      border-radius: 6px;
+   }
+}
+@media (max-width: 760px) {
+   .modal {
+      padding: 30px 15px;
+   }
+   .modal__title {
+      margin-bottom: 15px;
+      font-size: 15px;
+   }
+   .modal__label-text {
+      font-size: 12px;
+   }
+   .modal__input {
+      margin-bottom: 10px;
+      padding: 30px 15px 20px;
+      font-size: 12px;
+   }
+   .modal__button {
+      margin-top: 10px;
+      font-size: 12px;
+   }
+}
